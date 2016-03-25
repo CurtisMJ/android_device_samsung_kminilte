@@ -1,0 +1,5 @@
+type nfc_system_data_file_type, file_type, data_file_type;
+file_type_auto_trans(nfc, system_data_file, nfc_system_data_file_type)
+allow nfc sec_nfc_device:chr_file { read write ioctl open };
+allow nfc unlabeled:file { read getattr };
+allow nfc unlabeled:dir { getattr search };

@@ -1,0 +1,9 @@
+type rild_system_data_file_type, file_type, data_file_type;
+file_type_auto_trans(rild, system_data_file, rild_system_data_file_type)
+allow rild gpsd:dir search;
+allow rild gpsd:file { read getattr open };
+allow rild mediaserver:dir search;
+allow rild mediaserver:file { read getattr open };
+allow rild unlabeled:dir search;
+allow rild unlabeled:file { read write getattr open };
+allow rild proc_net:file write;

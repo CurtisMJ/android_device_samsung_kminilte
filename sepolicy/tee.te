@@ -1,0 +1,4 @@
+allow tee init:unix_stream_socket connectto;
+allow tee property_socket:sock_file write;
+allow tee system_prop:property_service set; 
+allow tee apk_data_file:dir { write create add_name };
