@@ -1,9 +1,0 @@
-allow init drmserver_service:service_manager add;
-allow init cbd:process { siginh rlimitinh transition noatsecure };
-allow init debugfs:dir mounton;
-allow init kmsg_device:chr_file write;
-allow init sysfs:lnk_file setattr;
-allow init wifi_efs_file:dir write;
-allow init sdcardd_exec:file getattr;
-allow init macloader:process { transition siginh rlimitinh noatsecure };
-allow init sec_sh:process { transition siginh rlimitinh noatsecure };

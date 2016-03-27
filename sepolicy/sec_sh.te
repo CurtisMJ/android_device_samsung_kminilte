@@ -1,3 +1,0 @@
- type sec_sh, domain;
-allow sec_sh shell_exec:file { entrypoint read };
-allow sec_sh kmsg_device:chr_file { write open };
